@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+  
+  head
+    title New App
+
+    // build:css style.css
+    link(href="stage/css/stage.css", rel="stylesheet")
+    link(href="css/main.css", rel="stylesheet")
+    // endbuild
+
+  body
+
+    // build:js js/libs.js
+    script(src="bower-libs/jquery/dist/jquery.js")
+    script(src="bower-libs/jade/runtime.js")
+    script(src="bower-libs/pubsub-js/src/pubsub.js")
+    script(src="bower-libs/paper/dist/paper-full.js")
+    // endbuild
+
+    // build:js js/app.js
+    script(src="js/jade-templates.js")
+    script(src="js/app.js")
+    script(src="stage/js/init.js")
+    // endbuild
+    
+    // build:remove
+    script(src="http://localhost:35757/livereload.js")
+    // endbuild
+

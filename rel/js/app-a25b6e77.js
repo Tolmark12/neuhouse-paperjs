@@ -1,0 +1,1 @@
+jadeTemplate={},jadeTemplate.example=function(e){var a,s=[],n=e||{};return function(e){s.push("<p>I say: "+jade.escape(null==(a=e)?"":a)+"</p>")}.call(this,"message"in n?n.message:"undefined"!=typeof message?message:void 0),s.join("")},console.log("Hello from ./stage/init.coffee ");
